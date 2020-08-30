@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Overlay Signup form</title>
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+<div id="myOverlay" class="overlay">
+    <span class="closebtn" onclick="closeForm()" title="Close Overlay"> &#215
+    </span>
+    <div class="wrap">
+        <h2>Sign Up Here</h2>
+<form>
+   <input type="text" placeholder="Enter First Name"><br>
+   <input type="text" placeholder="Enter Last Name"><br>
+   <input type="text" placeholder="Enter Email id or moble no."><br>
+   <input type="password" placeholder="Enter ypur password"><br>
+   <input type="password" placeholder="Reenter your password"><br>
+   <input type="submit" value="Submit">
+
+    <p class="text-center"> Already Have Account ?
+    <a href="C:/Users/hp/Desktop/insta/login.html" class="bg-primary text-white p-2">
+    Login<i class="fas fa-sign-in-alt pl-2">
+    </i></button></a></p>
+ </div>
+</div>
+</form>
+
+<button class="openbtn" onclick="openForm()">Click here to Sign up</button>
+
+<script>
+    function openForm(){
+        document.getElementById("myOverlay").style.display="block";
+    }
+</script>
+<script>
+    function closeForm(){
+        document.getElementById("myOverlay").style.display="none";
+    }
+</script>
+</body>
+</html>
